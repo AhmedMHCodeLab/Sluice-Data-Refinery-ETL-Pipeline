@@ -1,0 +1,28 @@
+# Secrets / local env
+.env
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+# real var files carry secrets; commit only the example
+*.tfvars
+!*.tfvars.example
+# keep the lock file committed: it pins provider versions
+!.terraform.lock.hcl
+
+# Source data (never commit the full dataset)
+/data/
+
+# Local design notes (not part of the deliverable tree)
+/notes/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Airflow
+airflow/logs/
