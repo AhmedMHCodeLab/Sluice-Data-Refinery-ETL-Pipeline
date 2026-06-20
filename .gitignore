@@ -1,6 +1,5 @@
 # Secrets / local env
 .env
-
 # Terraform
 .terraform/
 *.tfstate
@@ -11,18 +10,17 @@ crash.log
 !*.tfvars.example
 # keep the lock file committed: it pins provider versions
 !.terraform.lock.hcl
-
 # Source data (never commit the full dataset)
 /data/
-
 # Local design notes (not part of the deliverable tree)
 /notes/
-
 # Python
 __pycache__/
 *.py[cod]
 .venv/
 venv/
-
 # Airflow
 airflow/logs/
+# Sensitive key files
+*.p8
+*.pub
