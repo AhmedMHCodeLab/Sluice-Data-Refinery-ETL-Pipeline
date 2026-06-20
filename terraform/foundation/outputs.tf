@@ -17,3 +17,8 @@ output "azure_consent_url" {
   description = "Open once between phase 1 and phase 2 to grant admin consent."
   value       = snowflake_storage_integration_azure.this.describe_output[0].consent_url
 }
+
+output "raw_schema_fqn"          { value = snowflake_schema.raw.fully_qualified_name }
+output "staging_schema_fqn"      { value = snowflake_schema.staging.fully_qualified_name }
+output "modeled_schema_fqn"      { value = snowflake_schema.modeled.fully_qualified_name }
+output "customer_360_schema_fqn" { value = snowflake_schema.customer_360.fully_qualified_name }
