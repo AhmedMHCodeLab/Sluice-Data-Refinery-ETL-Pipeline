@@ -26,3 +26,5 @@ venv/
 
 # Airflow
 airflow/logs/
+*.p8
+*.pub
