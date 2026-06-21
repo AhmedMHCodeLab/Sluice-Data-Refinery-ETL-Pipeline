@@ -25,6 +25,7 @@ provider "snowflake" {
     "snowflake_file_format_resource",
     "snowflake_storage_integration_azure_resource",
     "snowflake_stage_external_azure_resource",
+    "snowflake_table_resource",
   ]
 }
 

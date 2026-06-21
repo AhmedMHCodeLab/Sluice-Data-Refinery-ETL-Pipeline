@@ -22,3 +22,12 @@ module "security" {
 
   pipeline_user_public_key = var.pipeline_user_public_key
 }
+
+module "data_model" {
+  source = "./data_model"
+
+  database_name   = module.foundation.database_name
+  raw_schema_name = module.foundation.raw_schema
+
+  depends_on = [module.security]
+}
